@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
@@ -81,4 +81,6 @@ for (const [deckId, rows] of groups) {
   }))
   writeFileSync(resolve(root, 'public/downloads', `${deckId}.zip`), zip(entries))
 }
+// Keep the original one-year download URL serving the current optimized cards.
+copyFileSync(resolve(root, 'public/downloads/baby-first.zip'), resolve(root, 'public/illustrations/one-year/tpr-one-year-cards.zip'))
 console.log(`Packaged ${manifest.cards.length} standalone images covering ${[...groups.values()].reduce((n, rows) => n + rows.length, 0)} cards in ${groups.size} deck archives.`)

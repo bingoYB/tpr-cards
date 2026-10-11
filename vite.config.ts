@@ -43,6 +43,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        // Precached images use content revisions; match their application version query too.
+        ignoreURLParametersMatching: [/^v$/, /^utm_/, /^fbclid$/],
         // Keep installation small; other illustrated cards cache when viewed.
         globIgnores: ['**/illustrations/commands/*.png'],
         runtimeCaching: [{
