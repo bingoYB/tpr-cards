@@ -16,6 +16,7 @@ import { useBack } from '@/composables/useBack'
 import { shuffle as shuffleArray } from '@/utils'
 import Icon from '@/components/Icon.vue'
 import CardVisual from '@/components/CardVisual.vue'
+import { getCardImage } from '@/data/illustrations'
 
 const props = defineProps<{ id: string }>()
 const route = useRoute()
@@ -284,7 +285,7 @@ watch(
       <Transition :name="dir === 'next' ? 'slide-left' : 'slide-right'" mode="out-in">
         <div :key="`${pos}-${order[pos]}`" class="flash">
           <div v-if="isSimon" class="flash__simon">🗣️ Simon says…</div>
-          <CardVisual :card="card" class="flash__emoji" :class="{ 'flash__image': card.illustration !== undefined }" />
+          <CardVisual :card="card" class="flash__emoji" :class="{ 'flash__image': !!getCardImage(card) }" />
           <div class="flash__text">
             <div class="flash__en">{{ card.en }}</div>
             <div class="flash__zh" :class="{ 'flash__zh--hidden': !showZh }">{{ card.zh }}</div>
@@ -508,8 +509,6 @@ watch(
     gap: clamp(24px, 6vw, 72px);
     padding: clamp(24px, 6vmin, 56px);
   }
-
-  .flash__emoji.flash__image { width: min(44vmin, 320px); aspect-ratio: 4 / 5; }
 
 .flash__text {
     text-align: left;

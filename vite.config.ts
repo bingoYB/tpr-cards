@@ -43,6 +43,17 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        // Keep installation small; other illustrated cards cache when viewed.
+        globIgnores: ['**/illustrations/commands/*.png'],
+        runtimeCaching: [{
+          urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/illustrations\/commands\/[^/]+\.png$/.test(url.pathname),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'tpr-command-illustrations',
+            expiration: { maxEntries: 200, maxAgeSeconds: 365 * 24 * 60 * 60 },
+            cacheableResponse: { statuses: [200] },
+          },
+        }],
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         // Serve the app shell for any navigation request so deep links work offline
         navigateFallback: 'index.html',

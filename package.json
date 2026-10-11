@@ -6,7 +6,7 @@
   "description": "TPR (Total Physical Response) command cards - an offline-first PWA for language teachers",
   "scripts": {
     "dev": "vite --host",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "node scripts/package-cards.mjs && vue-tsc --noEmit && vite build",
     "preview": "vite preview --host",
     "typecheck": "vue-tsc --noEmit"
   },

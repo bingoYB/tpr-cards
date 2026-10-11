@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import type { TprCard } from '@/types'
-import { oneYearIllustrations } from '@/data/illustrations'
+import { getCardImage } from '@/data/illustrations'
 const props = defineProps<{ card: TprCard }>()
 const src = computed(() => {
-  const index = props.card.illustration
-  const image = index === undefined ? undefined : oneYearIllustrations[index]
-  // Edited/imported commands must never display an image with a different English caption.
-  return image?.en === props.card.en ? `${import.meta.env.BASE_URL}illustrations/one-year/${image.name}.png` : undefined
+  const path = getCardImage(props.card)
+  return path ? `${import.meta.env.BASE_URL}illustrations/${path}` : undefined
 })
 const failed = ref(false)
 watch(src, () => { failed.value = false })

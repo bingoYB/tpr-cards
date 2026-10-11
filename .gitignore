@@ -6,3 +6,4 @@ dev-dist
 .claude/
 .env
 .env.*
+public/downloads/
