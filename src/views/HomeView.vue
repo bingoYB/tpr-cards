@@ -22,7 +22,7 @@ const previewCards = computed(() => builtInDecks.find((d) => d.id === (previewDe
 </script>
 
 <template>
-  <div class="page home-page">
+  <div class="page paper-page home-page">
     <header class="home-header home-container">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"><Icon name="play" size="19" /></span>
@@ -77,7 +77,7 @@ const previewCards = computed(() => builtInDecks.find((d) => d.id === (previewDe
 </template>
 
 <style scoped>
-.home-page { --home-green: #356452; --home-green-soft: #eaf0e6; --home-peach: #f2dec8; --home-paper: #fbf7ee; background: var(--home-paper); color: var(--text); overflow-x: clip; }
+.home-page { background: var(--home-paper); color: var(--text); overflow-x: clip; }
 .home-container { width: 100%; max-width: 1040px; margin: 0 auto; padding-inline: 32px; }
 .home-header { display: flex; align-items: center; justify-content: space-between; padding-top: calc(env(safe-area-inset-top, 0px) + 28px); padding-bottom: 20px; }
 .brand { display: flex; gap: 12px; align-items: center; }
@@ -123,8 +123,6 @@ h1 { font-family: 'Songti SC', 'STSong', 'Noto Serif CJK SC', serif; font-size: 
 .home-footer { margin-top: 42px; padding: 22px 0 4px; border-top: 1px solid var(--border); font-size: .72rem; color: var(--muted); }.home-footer > span:first-child { color: #bd7550; margin-right: 8px; }.footer-en { float: right; font-size: .65rem; letter-spacing: .04em; }
 .home-page :is(a, button):focus-visible { outline: 3px solid #ba7950; outline-offset: 4px; }
 @media (hover: hover) { .start-play:hover { transform: translateY(-2px); box-shadow: 0 7px 0 color-mix(in srgb, var(--home-green) 16%, transparent); }.age-tabs button:hover { transform: translateY(-2px); }.deck-new:hover { background: var(--home-green-soft); }.home-settings:hover { color: var(--home-green); } }
-:global(:root[data-theme='dark'] .home-page) { --home-paper: #1c201c; --home-green: #a6c5a5; --home-green-soft: #2b382e; --home-peach: #44382c; }
-@media (prefers-color-scheme: dark) { :global(:root:not([data-theme='light']) .home-page) { --home-paper: #1c201c; --home-green: #a6c5a5; --home-green-soft: #2b382e; --home-peach: #44382c; } }
 @media (max-width: 700px) { .home-container { padding-inline: 22px; }.home-header { padding-top: calc(env(safe-area-inset-top, 0px) + 20px); padding-bottom: 12px; }.welcome { padding: 24px 0 30px; gap: 8px; grid-template-columns: 1.05fr .95fr; }h1 { font-size: 1.8rem; letter-spacing: .01em; }.eyebrow { font-size: .53rem; letter-spacing: .07em; }.welcome-description { font-size: .82rem; }.mobile-break { display: block; }.welcome-art { height: 258px; }.art-circle { width: 200px; height: 220px; top: 17px; }.preview-card { width: 108px; top: 40px; border-radius: 12px; padding: 3px; }.preview-card--0 { left: -5%; top: 65px; }.preview-card--1 { right: -2%; top: 29px; }.preview-card--2 { top: 60px; }.art-note { font-size: .65rem; bottom: 6px; }.art-spark--one { right: 14%; font-size: 26px; }.art-spark--two { left: 0; bottom: 0; }.age-tabs { gap: 7px; }.age-tabs button { padding: 12px 6px; text-align: center; min-height: 69px; border-radius: 12px; }.age-label { font-size: 1rem; }.age-stage { font-size: .6rem; }.section-aside { display: none; }.section-heading h2 { font-size: 1.02rem; }.deck-grid { grid-template-columns: 1fr; gap: 12px; }.collection { margin-top: 28px; }.age-note { padding: 15px; }.age-note p { font-size: .76rem; }.start-play { padding: 13px 14px; margin-top: 18px; gap: 7px; font-size: .8rem; }.start-arrow { margin-left: 4px; }.welcome-footnote { font-size: .64rem; }.deck-new { min-height: 104px; padding: 20px; }.home-footer { margin-top: 30px; }.footer-en { float: none; display: block; margin-top: 8px; margin-left: 22px; } }
 @media (max-width: 380px) { .home-container { padding-inline: 16px; }h1 { font-size: 1.6rem; }.welcome-art { height: 235px; }.preview-card { width: 92px; }.art-circle { width: 168px; height: 193px; }.age-label { font-size: .8rem; }.age-stage { font-size: .54rem; }.welcome-footnote { font-size: .6rem; } }
 </style>

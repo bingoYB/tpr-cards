@@ -1,4 +1,9 @@
 :root {
+  --paper-bg: #fbf7ee;
+  --paper-accent: #356452;
+  --paper-accent-soft: #eaf0e6;
+  --paper-peach: #f2dec8;
+  --paper-on-accent: #fbf7ee;
   --bg: #fff7f0;
   --surface: #ffffff;
   --surface-2: #f6ebe2;
@@ -13,6 +18,11 @@
 }
 
 :root[data-theme='dark'] {
+  --paper-bg: #1c201c;
+  --paper-accent: #a6c5a5;
+  --paper-accent-soft: #2b382e;
+  --paper-peach: #44382c;
+  --paper-on-accent: #1c201c;
   --bg: #171311;
   --surface: #241e1a;
   --surface-2: #2f2723;
@@ -27,6 +37,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
+    --paper-bg: #1c201c;
+    --paper-accent: #a6c5a5;
+    --paper-accent-soft: #2b382e;
+    --paper-peach: #44382c;
+    --paper-on-accent: #1c201c;
     --bg: #171311;
     --surface: #241e1a;
     --surface-2: #2f2723;
@@ -110,6 +125,41 @@ select {
   flex-direction: column;
   padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px);
 }
+
+/* Shared paper and forest palette for the home, settings and deck editor. */
+.paper-page {
+  --bg: var(--paper-bg);
+  --primary: var(--paper-accent);
+  --home-green: var(--paper-accent);
+  --home-green-soft: var(--paper-accent-soft);
+  --home-peach: var(--paper-peach);
+  --home-paper: var(--paper-bg);
+  background: var(--paper-bg);
+}
+
+.paper-page .btn-primary {
+  color: var(--paper-on-accent);
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+.paper-page .app-header {
+  padding-top: calc(env(safe-area-inset-top, 0px) + 20px);
+  padding-bottom: 12px;
+}
+
+.paper-page .app-header .icon-btn {
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--primary);
+}
+
+.paper-page :is(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.paper-page .section-title { color: var(--text); }
 
 .container {
   width: 100%;

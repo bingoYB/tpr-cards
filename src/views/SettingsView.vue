@@ -122,7 +122,7 @@ function resetSettings() {
 </script>
 
 <template>
-  <div class="page">
+  <div class="page paper-page settings-page">
     <AppHeader title="设置" />
 
     <main class="container">
@@ -313,6 +313,14 @@ function resetSettings() {
 </template>
 
 <style scoped>
+.settings-page .btn:not(.btn-primary):not(.btn-danger) {
+  color: var(--primary);
+  background: var(--paper-accent-soft);
+  box-shadow: none;
+}
+.row > label { min-width: 0; }
+.row > .btn { flex-shrink: 0; }
+
 .group {
   margin-top: 24px;
 }
@@ -320,7 +328,8 @@ function resetSettings() {
 .card {
   background: var(--surface);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  box-shadow: none;
   padding: 4px 16px;
 }
 
@@ -401,7 +410,7 @@ function resetSettings() {
 
 .segmented__item--on {
   background: var(--primary);
-  color: #fff;
+  color: var(--paper-on-accent);
 }
 
 .note {

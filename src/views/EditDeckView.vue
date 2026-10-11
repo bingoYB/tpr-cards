@@ -25,7 +25,7 @@ if (source?.builtIn) {
   router.replace(copyId ? `/edit/${copyId}` : '/')
 }
 
-const COLORS = ['#ff7a45', '#4f8cff', '#2dbd6e', '#a06bff', '#ff5c8a', '#ffb020', '#00b8d9', '#8d6e63']
+const COLORS = ['#356452', '#ff7a45', '#4f8cff', '#2dbd6e', '#a06bff', '#ff5c8a', '#ffb020', '#00b8d9', '#8d6e63']
 
 const form = reactive({
   name: source?.name ?? '',
@@ -194,7 +194,7 @@ onBeforeRouteLeave(() => {
 </script>
 
 <template>
-  <div class="page">
+  <div class="page paper-page editor-page">
     <AppHeader :title="isNew ? '新建卡组' : '编辑卡组'" :back="isNew ? '/' : `/deck/${id}`">
       <template #actions>
         <button class="icon-btn active" aria-label="保存" :disabled="saving || uploading > 0" @click="save">
@@ -329,6 +329,14 @@ onBeforeRouteLeave(() => {
 </template>
 
 <style scoped>
+.editor-page .image-upload {
+  color: var(--primary);
+  background: var(--paper-accent-soft);
+  box-shadow: none;
+}
+.editor-page .cards-head .btn { color: var(--primary); }
+.editor-page .bulk { padding: 14px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); }
+
 .edit-form { border: 0; padding: 0; margin: 0; min-width: 0; }
 .deck-meta {
   display: grid;
@@ -400,7 +408,8 @@ onBeforeRouteLeave(() => {
   padding: 10px;
   background: var(--surface);
   border-radius: 14px;
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  box-shadow: none;
 }
 
 .card-edit__emoji {
@@ -460,7 +469,8 @@ onBeforeRouteLeave(() => {
   border: 2px dashed var(--border);
   box-shadow: none;
   background: transparent;
-  color: var(--muted);
+  color: var(--primary);
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
 }
 
 .save {
