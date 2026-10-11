@@ -7,8 +7,6 @@ export interface Settings {
   voiceURI: string
   /** TTS speaking rate (0.5 – 1.5) */
   rate: number
-  /** Seconds between cards in auto-play mode */
-  autoPlayInterval: number
   /** Show the Chinese hint by default in the player */
   showZh: boolean
   /** Speak the command automatically when a card is shown */
@@ -25,7 +23,6 @@ export interface Settings {
 export const defaultSettings: Settings = {
   voiceURI: '',
   rate: 0.9,
-  autoPlayInterval: 5,
   showZh: true,
   autoSpeak: true,
   simonSays: false,

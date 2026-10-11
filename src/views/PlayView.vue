@@ -5,7 +5,6 @@ import {
   useDocumentVisibility,
   useEventListener,
   useFullscreen,
-  useIntervalFn,
   usePointerSwipe,
   useWakeLock,
 } from '@vueuse/core'
@@ -90,7 +89,6 @@ function next() {
   if (pos.value < total.value - 1) {
     dir.value = 'next'
     pos.value++
-    kickAutoPlay()
   } else {
     finish()
   }
@@ -100,12 +98,10 @@ function prev() {
   if (pos.value > 0) {
     dir.value = 'prev'
     pos.value--
-    kickAutoPlay()
   }
 }
 
 function finish() {
-  pause()
   stopSpeech()
   finished.value = true
 }
@@ -119,37 +115,9 @@ function exit() {
   back(props.id === 'all' ? '/' : `/deck/${props.id}`)
 }
 
-/* ---------- auto play ---------- */
-
-const { pause, resume, isActive } = useIntervalFn(
-  () => {
-    if (pos.value < total.value - 1) next()
-    else finish()
-  },
-  computed(() => Math.max(1, settings.value.autoPlayInterval) * 1000),
-  { immediate: false },
-)
-
-function toggleAutoPlay() {
-  if (isActive.value) pause()
-  else {
-    if (finished.value) restart('same')
-    resume()
-  }
-}
-
-/** Restart the countdown after a manual navigation so the next flip isn't rushed. */
-function kickAutoPlay() {
-  if (isActive.value) {
-    pause()
-    resume()
-  }
-}
-
 const visibility = useDocumentVisibility()
 watch(visibility, (v) => {
   if (v === 'hidden') {
-    pause()
     stopSpeech()
   }
 })
@@ -176,7 +144,7 @@ function onStageClick() {
 }
 
 useEventListener(window, 'keydown', (e: KeyboardEvent) => {
-  if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
+  if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement || e.target instanceof HTMLSelectElement || (e.key === ' ' && e.target instanceof HTMLButtonElement)) return
   switch (e.key) {
     case 'ArrowRight':
     case 'PageDown':
@@ -193,10 +161,6 @@ useEventListener(window, 'keydown', (e: KeyboardEvent) => {
     case ' ':
       e.preventDefault()
       say()
-      break
-    case 'Enter':
-      e.preventDefault()
-      toggleAutoPlay()
       break
     case 'h':
       showZh.value = !showZh.value
@@ -226,7 +190,6 @@ onMounted(async () => {
 })
 
 onBeforeUnmount(() => {
-  pause()
   stopSpeech()
   if (wakeLock.isActive.value) wakeLock.release().catch(() => {})
 })
@@ -244,7 +207,6 @@ watch(
 <template>
   <div
     v-if="deck && card"
-    ref="stage"
     class="play"
     :class="{ 'play--speaking': speaking }"
     :style="{ '--deck-color': deck.color }"
@@ -281,7 +243,7 @@ watch(
       <div class="play__bar-fill" :style="{ width: `${((pos + 1) / total) * 100}%` }" />
     </div>
 
-    <main class="play__stage" @click="onStageClick">
+    <main ref="stage" class="play__stage" @click="onStageClick">
       <Transition :name="dir === 'next' ? 'slide-left' : 'slide-right'" mode="out-in">
         <div :key="`${pos}-${order[pos]}`" class="flash">
           <div v-if="isSimon" class="flash__simon">🗣️ Simon says…</div>
@@ -298,7 +260,12 @@ watch(
       </p>
     </main>
 
-    <footer class="play__controls">
+    <footer class="play__footer">
+      <div v-if="speechSupported" class="play__rate">
+        <label for="play-rate">语速 <span>{{ settings.rate.toFixed(1) }}×</span></label>
+        <input id="play-rate" v-model.number="settings.rate" type="range" min="0.5" max="1.5" step="0.1" />
+      </div>
+      <div class="play__controls">
       <button class="ctrl" :disabled="pos === 0" aria-label="上一张" @click="prev">
         <Icon name="prev" size="30" />
       </button>
@@ -311,17 +278,10 @@ watch(
       >
         <Icon name="speaker" size="34" />
       </button>
-      <button
-        class="ctrl"
-        :class="{ 'ctrl--on': isActive }"
-        :aria-label="isActive ? '暂停自动播放' : '自动播放'"
-        @click="toggleAutoPlay"
-      >
-        <Icon :name="isActive ? 'pause' : 'play'" size="30" />
-      </button>
       <button class="ctrl" aria-label="下一张" @click="next">
         <Icon name="next" size="30" />
       </button>
+      </div>
     </footer>
 
     <Transition name="fade">
@@ -523,12 +483,18 @@ watch(
   opacity: 0.8;
 }
 
+.play__footer { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px); }
+.play__rate { display: flex; align-items: center; gap: 16px; max-width: 360px; margin: 0 auto; padding: 0 24px 8px; }
+.play__rate label { flex: none; font-size: .8rem; color: var(--muted); }
+.play__rate label span { margin-left: 6px; color: var(--text); font-weight: 700; font-variant-numeric: tabular-nums; }
+.play__rate input { min-width: 0; flex: 1; accent-color: var(--deck-color); touch-action: auto; }
+.play__rate input:focus-visible { outline: 2px solid var(--deck-color); outline-offset: 4px; }
 .play__controls {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
-  padding: 8px 16px calc(env(safe-area-inset-bottom, 0px) + 18px);
+  padding: 0 16px;
 }
 
 .ctrl {

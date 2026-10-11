@@ -164,20 +164,6 @@ function resetSettings() {
       <section class="group">
         <h2 class="section-title">播放</h2>
         <div class="card">
-          <div class="row row--col">
-            <div class="row__head">
-              <label for="interval">自动播放间隔</label>
-              <span class="value">{{ settings.autoPlayInterval }} 秒</span>
-            </div>
-            <input
-              id="interval"
-              v-model.number="settings.autoPlayInterval"
-              type="range"
-              min="2"
-              max="20"
-              step="1"
-            />
-          </div>
           <div class="row">
             <label for="show-zh">默认显示中文提示</label>
             <span class="switch">
@@ -300,7 +286,7 @@ function resetSettings() {
             <button class="btn btn-sm btn-ghost" @click="resetSettings">恢复默认设置</button>
           </div>
           <p class="note">
-            键盘快捷键：← → 切换 · 空格 朗读 · 回车 自动播放 · H 显示/隐藏中文 · Esc 退出
+            键盘快捷键：← → 切换 · 空格 朗读 · H 显示/隐藏中文 · Esc 退出
           </p>
         </div>
       </section>
