@@ -286,7 +286,7 @@ onBeforeRouteLeave(() => {
               <input v-model="c.zh" class="input" placeholder="中文提示" aria-label="中文提示" />
             </div>
             <div class="card-edit__image">
-              <CardVisual v-if="c.imageId" :card="c" :preview="previews[c.id]" />
+              <CardVisual v-if="c.imageId" :card="c" thumbnail sizes="72px" :preview="previews[c.id]" />
               <label class="btn btn-sm image-upload" :class="{ 'image-upload--busy': saving || uploading > 0 }">
                 <Icon name="upload" size="16" /> {{ c.imageId ? '替换图片' : '上传图片' }}
                 <input type="file" :accept="IMAGE_ACCEPT" :disabled="saving || uploading > 0" @change="uploadImage($event, c)" />

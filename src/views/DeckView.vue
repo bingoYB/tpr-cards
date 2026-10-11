@@ -70,7 +70,7 @@ function copyToMine() {
             :to="`/play/${deck.id}?start=${i}`"
             class="card-row"
           >
-            <CardVisual :card="c" class="card-row__emoji" />
+            <CardVisual :card="c" :sizes="illustrated ? '(min-width: 760px) 204px, (min-width: 640px) calc((100vw - 148px) / 3), calc((100vw - 104px) / 2)' : '44px'" class="card-row__emoji" />
             <span class="card-row__text">
               <strong>{{ c.en }}</strong>
               <small>{{ c.zh }}</small>

@@ -1,0 +1,3672 @@
+{
+  "widths": [
+    160,
+    320,
+    640
+  ],
+  "originalBytes": 88233883,
+  "variantBytes": {
+    "160": 1510204,
+    "320": 3668282,
+    "640": 8902356
+  },
+  "cards": [
+    {
+      "en": "Clap your hands",
+      "variants": [
+        {
+          "path": "responsive/one-year/clap-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8728
+        },
+        {
+          "path": "responsive/one-year/clap-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20690
+        },
+        {
+          "path": "responsive/one-year/clap-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50336
+        }
+      ]
+    },
+    {
+      "en": "Wave hello",
+      "variants": [
+        {
+          "path": "responsive/one-year/wave-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8656
+        },
+        {
+          "path": "responsive/one-year/wave-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20222
+        },
+        {
+          "path": "responsive/one-year/wave-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47152
+        }
+      ]
+    },
+    {
+      "en": "Arms up",
+      "variants": [
+        {
+          "path": "responsive/one-year/arms-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9090
+        },
+        {
+          "path": "responsive/one-year/arms-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21578
+        },
+        {
+          "path": "responsive/one-year/arms-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51800
+        }
+      ]
+    },
+    {
+      "en": "Touch your head",
+      "variants": [
+        {
+          "path": "responsive/one-year/head-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8542
+        },
+        {
+          "path": "responsive/one-year/head-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21050
+        },
+        {
+          "path": "responsive/one-year/head-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 48684
+        }
+      ]
+    },
+    {
+      "en": "Touch your nose",
+      "variants": [
+        {
+          "path": "responsive/one-year/nose-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8298
+        },
+        {
+          "path": "responsive/one-year/nose-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19440
+        },
+        {
+          "path": "responsive/one-year/nose-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45940
+        }
+      ]
+    },
+    {
+      "en": "Touch your ear",
+      "variants": [
+        {
+          "path": "responsive/one-year/ear-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8970
+        },
+        {
+          "path": "responsive/one-year/ear-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22164
+        },
+        {
+          "path": "responsive/one-year/ear-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52650
+        }
+      ]
+    },
+    {
+      "en": "Give me the teddy",
+      "variants": [
+        {
+          "path": "responsive/one-year/teddy-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9644
+        },
+        {
+          "path": "responsive/one-year/teddy-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23696
+        },
+        {
+          "path": "responsive/one-year/teddy-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57712
+        }
+      ]
+    },
+    {
+      "en": "Put it in",
+      "variants": [
+        {
+          "path": "responsive/one-year/put-in-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8822
+        },
+        {
+          "path": "responsive/one-year/put-in-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22010
+        },
+        {
+          "path": "responsive/one-year/put-in-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52556
+        }
+      ]
+    },
+    {
+      "en": "Roll the ball",
+      "variants": [
+        {
+          "path": "responsive/one-year/roll-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8668
+        },
+        {
+          "path": "responsive/one-year/roll-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20786
+        },
+        {
+          "path": "responsive/one-year/roll-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51530
+        }
+      ]
+    },
+    {
+      "en": "Peekaboo",
+      "variants": [
+        {
+          "path": "responsive/one-year/peekaboo-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10572
+        },
+        {
+          "path": "responsive/one-year/peekaboo-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26920
+        },
+        {
+          "path": "responsive/one-year/peekaboo-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 65804
+        }
+      ]
+    },
+    {
+      "en": "Turn the page",
+      "variants": [
+        {
+          "path": "responsive/one-year/page-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9878
+        },
+        {
+          "path": "responsive/one-year/page-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24512
+        },
+        {
+          "path": "responsive/one-year/page-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58418
+        }
+      ]
+    },
+    {
+      "en": "Give me a hug",
+      "variants": [
+        {
+          "path": "responsive/one-year/hug-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9282
+        },
+        {
+          "path": "responsive/one-year/hug-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23258
+        },
+        {
+          "path": "responsive/one-year/hug-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57748
+        }
+      ]
+    },
+    {
+      "en": "Pick up the teddy",
+      "variants": [
+        {
+          "path": "responsive/commands/pick-up-the-teddy-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9786
+        },
+        {
+          "path": "responsive/commands/pick-up-the-teddy-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24292
+        },
+        {
+          "path": "responsive/commands/pick-up-the-teddy-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 60644
+        }
+      ]
+    },
+    {
+      "en": "Put the toy away",
+      "variants": [
+        {
+          "path": "responsive/commands/put-the-toy-away-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9906
+        },
+        {
+          "path": "responsive/commands/put-the-toy-away-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23616
+        },
+        {
+          "path": "responsive/commands/put-the-toy-away-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58186
+        }
+      ]
+    },
+    {
+      "en": "Bring me the ball",
+      "variants": [
+        {
+          "path": "responsive/commands/bring-me-the-ball-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9312
+        },
+        {
+          "path": "responsive/commands/bring-me-the-ball-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22202
+        },
+        {
+          "path": "responsive/commands/bring-me-the-ball-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54140
+        }
+      ]
+    },
+    {
+      "en": "Stack the blocks",
+      "variants": [
+        {
+          "path": "responsive/commands/stack-the-blocks-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9724
+        },
+        {
+          "path": "responsive/commands/stack-the-blocks-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23074
+        },
+        {
+          "path": "responsive/commands/stack-the-blocks-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56646
+        }
+      ]
+    },
+    {
+      "en": "Open the box",
+      "variants": [
+        {
+          "path": "responsive/commands/open-the-box-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9036
+        },
+        {
+          "path": "responsive/commands/open-the-box-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21164
+        },
+        {
+          "path": "responsive/commands/open-the-box-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51392
+        }
+      ]
+    },
+    {
+      "en": "Close the box",
+      "variants": [
+        {
+          "path": "responsive/commands/close-the-box-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9432
+        },
+        {
+          "path": "responsive/commands/close-the-box-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22684
+        },
+        {
+          "path": "responsive/commands/close-the-box-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56122
+        }
+      ]
+    },
+    {
+      "en": "Find the cat",
+      "variants": [
+        {
+          "path": "responsive/commands/find-the-cat-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10422
+        },
+        {
+          "path": "responsive/commands/find-the-cat-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26272
+        },
+        {
+          "path": "responsive/commands/find-the-cat-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 64658
+        }
+      ]
+    },
+    {
+      "en": "Wash your hands",
+      "variants": [
+        {
+          "path": "responsive/commands/wash-your-hands-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11038
+        },
+        {
+          "path": "responsive/commands/wash-your-hands-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27906
+        },
+        {
+          "path": "responsive/commands/wash-your-hands-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 70808
+        }
+      ]
+    },
+    {
+      "en": "Wipe your hands",
+      "variants": [
+        {
+          "path": "responsive/commands/wipe-your-hands-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9022
+        },
+        {
+          "path": "responsive/commands/wipe-your-hands-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22250
+        },
+        {
+          "path": "responsive/commands/wipe-your-hands-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55332
+        }
+      ]
+    },
+    {
+      "en": "Sit on the chair",
+      "variants": [
+        {
+          "path": "responsive/commands/sit-on-the-chair-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8628
+        },
+        {
+          "path": "responsive/commands/sit-on-the-chair-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20290
+        },
+        {
+          "path": "responsive/commands/sit-on-the-chair-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 48514
+        }
+      ]
+    },
+    {
+      "en": "Feed the teddy",
+      "variants": [
+        {
+          "path": "responsive/commands/feed-the-teddy-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11020
+        },
+        {
+          "path": "responsive/commands/feed-the-teddy-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27366
+        },
+        {
+          "path": "responsive/commands/feed-the-teddy-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 68000
+        }
+      ]
+    },
+    {
+      "en": "Wave goodbye",
+      "variants": [
+        {
+          "path": "responsive/commands/wave-goodbye-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10766
+        },
+        {
+          "path": "responsive/commands/wave-goodbye-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27712
+        },
+        {
+          "path": "responsive/commands/wave-goodbye-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 67406
+        }
+      ]
+    },
+    {
+      "en": "Flap your arms",
+      "variants": [
+        {
+          "path": "responsive/commands/flap-your-arms-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8566
+        },
+        {
+          "path": "responsive/commands/flap-your-arms-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20460
+        },
+        {
+          "path": "responsive/commands/flap-your-arms-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49780
+        }
+      ]
+    },
+    {
+      "en": "Stretch like a cat",
+      "variants": [
+        {
+          "path": "responsive/commands/stretch-like-a-cat-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10128
+        },
+        {
+          "path": "responsive/commands/stretch-like-a-cat-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24864
+        },
+        {
+          "path": "responsive/commands/stretch-like-a-cat-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 61294
+        }
+      ]
+    },
+    {
+      "en": "Walk like a penguin",
+      "variants": [
+        {
+          "path": "responsive/commands/walk-like-a-penguin-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10038
+        },
+        {
+          "path": "responsive/commands/walk-like-a-penguin-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23972
+        },
+        {
+          "path": "responsive/commands/walk-like-a-penguin-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58332
+        }
+      ]
+    },
+    {
+      "en": "Move slowly",
+      "variants": [
+        {
+          "path": "responsive/commands/move-slowly-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8972
+        },
+        {
+          "path": "responsive/commands/move-slowly-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21494
+        },
+        {
+          "path": "responsive/commands/move-slowly-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54814
+        }
+      ]
+    },
+    {
+      "en": "Dance and stop",
+      "variants": [
+        {
+          "path": "responsive/commands/dance-and-stop-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10976
+        },
+        {
+          "path": "responsive/commands/dance-and-stop-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27064
+        },
+        {
+          "path": "responsive/commands/dance-and-stop-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 66834
+        }
+      ]
+    },
+    {
+      "en": "Take two steps",
+      "variants": [
+        {
+          "path": "responsive/commands/take-two-steps-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8260
+        },
+        {
+          "path": "responsive/commands/take-two-steps-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19542
+        },
+        {
+          "path": "responsive/commands/take-two-steps-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45526
+        }
+      ]
+    },
+    {
+      "en": "Find a red block",
+      "variants": [
+        {
+          "path": "responsive/commands/find-a-red-block-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9216
+        },
+        {
+          "path": "responsive/commands/find-a-red-block-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21784
+        },
+        {
+          "path": "responsive/commands/find-a-red-block-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51206
+        }
+      ]
+    },
+    {
+      "en": "Put the blue block in the box",
+      "variants": [
+        {
+          "path": "responsive/commands/put-the-blue-block-in-the-box-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9616
+        },
+        {
+          "path": "responsive/commands/put-the-blue-block-in-the-box-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23290
+        },
+        {
+          "path": "responsive/commands/put-the-blue-block-in-the-box-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54490
+        }
+      ]
+    },
+    {
+      "en": "Clap, then wave",
+      "variants": [
+        {
+          "path": "responsive/commands/clap-then-wave-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10244
+        },
+        {
+          "path": "responsive/commands/clap-then-wave-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26606
+        },
+        {
+          "path": "responsive/commands/clap-then-wave-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 64314
+        }
+      ]
+    },
+    {
+      "en": "Touch your head, then your knees",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-head-then-your-knees-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10826
+        },
+        {
+          "path": "responsive/commands/touch-your-head-then-your-knees-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27354
+        },
+        {
+          "path": "responsive/commands/touch-your-head-then-your-knees-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 66968
+        }
+      ]
+    },
+    {
+      "en": "Put the teddy on the chair",
+      "variants": [
+        {
+          "path": "responsive/commands/put-the-teddy-on-the-chair-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11016
+        },
+        {
+          "path": "responsive/commands/put-the-teddy-on-the-chair-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27382
+        },
+        {
+          "path": "responsive/commands/put-the-teddy-on-the-chair-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 66418
+        }
+      ]
+    },
+    {
+      "en": "Make a happy face",
+      "variants": [
+        {
+          "path": "responsive/commands/make-a-happy-face-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9476
+        },
+        {
+          "path": "responsive/commands/make-a-happy-face-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22712
+        },
+        {
+          "path": "responsive/commands/make-a-happy-face-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54948
+        }
+      ]
+    },
+    {
+      "en": "Clap twice, then sit down",
+      "variants": [
+        {
+          "path": "responsive/commands/clap-twice-then-sit-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10916
+        },
+        {
+          "path": "responsive/commands/clap-twice-then-sit-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27674
+        },
+        {
+          "path": "responsive/commands/clap-twice-then-sit-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 66914
+        }
+      ]
+    },
+    {
+      "en": "Take one step to the left",
+      "variants": [
+        {
+          "path": "responsive/commands/take-one-step-to-the-left-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9236
+        },
+        {
+          "path": "responsive/commands/take-one-step-to-the-left-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21462
+        },
+        {
+          "path": "responsive/commands/take-one-step-to-the-left-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52282
+        }
+      ]
+    },
+    {
+      "en": "Take two steps to the right",
+      "variants": [
+        {
+          "path": "responsive/commands/take-two-steps-to-the-right-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10256
+        },
+        {
+          "path": "responsive/commands/take-two-steps-to-the-right-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25064
+        },
+        {
+          "path": "responsive/commands/take-two-steps-to-the-right-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57392
+        }
+      ]
+    },
+    {
+      "en": "Put the teddy under the table",
+      "variants": [
+        {
+          "path": "responsive/commands/put-the-teddy-under-the-table-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9916
+        },
+        {
+          "path": "responsive/commands/put-the-teddy-under-the-table-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24750
+        },
+        {
+          "path": "responsive/commands/put-the-teddy-under-the-table-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 59824
+        }
+      ]
+    },
+    {
+      "en": "Stand behind the chair",
+      "variants": [
+        {
+          "path": "responsive/commands/stand-behind-the-chair-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 7884
+        },
+        {
+          "path": "responsive/commands/stand-behind-the-chair-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19204
+        },
+        {
+          "path": "responsive/commands/stand-behind-the-chair-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47320
+        }
+      ]
+    },
+    {
+      "en": "Put three blocks in a row",
+      "variants": [
+        {
+          "path": "responsive/commands/put-three-blocks-in-a-row-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9150
+        },
+        {
+          "path": "responsive/commands/put-three-blocks-in-a-row-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22368
+        },
+        {
+          "path": "responsive/commands/put-three-blocks-in-a-row-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55076
+        }
+      ]
+    },
+    {
+      "en": "Find something red and bring it here",
+      "variants": [
+        {
+          "path": "responsive/commands/find-something-red-and-bring-it-here-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9804
+        },
+        {
+          "path": "responsive/commands/find-something-red-and-bring-it-here-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23910
+        },
+        {
+          "path": "responsive/commands/find-something-red-and-bring-it-here-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56518
+        }
+      ]
+    },
+    {
+      "en": "Touch your shoulders, knees and toes",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-shoulders-knees-and-toes-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11290
+        },
+        {
+          "path": "responsive/commands/touch-your-shoulders-knees-and-toes-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 28644
+        },
+        {
+          "path": "responsive/commands/touch-your-shoulders-knees-and-toes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 68246
+        }
+      ]
+    },
+    {
+      "en": "Fly like a bird, then freeze",
+      "variants": [
+        {
+          "path": "responsive/commands/fly-like-a-bird-then-freeze-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10580
+        },
+        {
+          "path": "responsive/commands/fly-like-a-bird-then-freeze-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25882
+        },
+        {
+          "path": "responsive/commands/fly-like-a-bird-then-freeze-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 60372
+        }
+      ]
+    },
+    {
+      "en": "Stand next to your partner",
+      "variants": [
+        {
+          "path": "responsive/commands/stand-next-to-your-partner-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11338
+        },
+        {
+          "path": "responsive/commands/stand-next-to-your-partner-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27472
+        },
+        {
+          "path": "responsive/commands/stand-next-to-your-partner-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 67650
+        }
+      ]
+    },
+    {
+      "en": "Turn around, then clap three times",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-around-then-clap-three-times-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11320
+        },
+        {
+          "path": "responsive/commands/turn-around-then-clap-three-times-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27810
+        },
+        {
+          "path": "responsive/commands/turn-around-then-clap-three-times-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 67868
+        }
+      ]
+    },
+    {
+      "en": "Point to blue, then yellow",
+      "variants": [
+        {
+          "path": "responsive/commands/point-to-blue-then-yellow-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9480
+        },
+        {
+          "path": "responsive/commands/point-to-blue-then-yellow-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22444
+        },
+        {
+          "path": "responsive/commands/point-to-blue-then-yellow-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53030
+        }
+      ]
+    },
+    {
+      "en": "Stand up",
+      "variants": [
+        {
+          "path": "responsive/commands/stand-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8190
+        },
+        {
+          "path": "responsive/commands/stand-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19630
+        },
+        {
+          "path": "responsive/commands/stand-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47374
+        }
+      ]
+    },
+    {
+      "en": "Sit down",
+      "variants": [
+        {
+          "path": "responsive/commands/sit-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8800
+        },
+        {
+          "path": "responsive/commands/sit-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20620
+        },
+        {
+          "path": "responsive/commands/sit-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49010
+        }
+      ]
+    },
+    {
+      "en": "Open your book",
+      "variants": [
+        {
+          "path": "responsive/commands/open-your-book-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9818
+        },
+        {
+          "path": "responsive/commands/open-your-book-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24002
+        },
+        {
+          "path": "responsive/commands/open-your-book-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57076
+        }
+      ]
+    },
+    {
+      "en": "Close your book",
+      "variants": [
+        {
+          "path": "responsive/commands/close-your-book-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8874
+        },
+        {
+          "path": "responsive/commands/close-your-book-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22940
+        },
+        {
+          "path": "responsive/commands/close-your-book-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57290
+        }
+      ]
+    },
+    {
+      "en": "Raise your hand",
+      "variants": [
+        {
+          "path": "responsive/commands/raise-your-hand-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9294
+        },
+        {
+          "path": "responsive/commands/raise-your-hand-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21886
+        },
+        {
+          "path": "responsive/commands/raise-your-hand-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54366
+        }
+      ]
+    },
+    {
+      "en": "Be quiet",
+      "variants": [
+        {
+          "path": "responsive/commands/be-quiet-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9028
+        },
+        {
+          "path": "responsive/commands/be-quiet-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21736
+        },
+        {
+          "path": "responsive/commands/be-quiet-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51570
+        }
+      ]
+    },
+    {
+      "en": "Listen",
+      "variants": [
+        {
+          "path": "responsive/commands/listen-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8938
+        },
+        {
+          "path": "responsive/commands/listen-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21160
+        },
+        {
+          "path": "responsive/commands/listen-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50898
+        }
+      ]
+    },
+    {
+      "en": "Look at me",
+      "variants": [
+        {
+          "path": "responsive/commands/look-at-me-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9156
+        },
+        {
+          "path": "responsive/commands/look-at-me-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21680
+        },
+        {
+          "path": "responsive/commands/look-at-me-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53482
+        }
+      ]
+    },
+    {
+      "en": "Line up",
+      "variants": [
+        {
+          "path": "responsive/commands/line-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9478
+        },
+        {
+          "path": "responsive/commands/line-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23724
+        },
+        {
+          "path": "responsive/commands/line-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57656
+        }
+      ]
+    },
+    {
+      "en": "Come here",
+      "variants": [
+        {
+          "path": "responsive/commands/come-here-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9688
+        },
+        {
+          "path": "responsive/commands/come-here-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23954
+        },
+        {
+          "path": "responsive/commands/come-here-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58194
+        }
+      ]
+    },
+    {
+      "en": "Go back to your seat",
+      "variants": [
+        {
+          "path": "responsive/commands/go-back-to-your-seat-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9854
+        },
+        {
+          "path": "responsive/commands/go-back-to-your-seat-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23408
+        },
+        {
+          "path": "responsive/commands/go-back-to-your-seat-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56034
+        }
+      ]
+    },
+    {
+      "en": "Pick up your pencil",
+      "variants": [
+        {
+          "path": "responsive/commands/pick-up-your-pencil-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9568
+        },
+        {
+          "path": "responsive/commands/pick-up-your-pencil-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23846
+        },
+        {
+          "path": "responsive/commands/pick-up-your-pencil-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57838
+        }
+      ]
+    },
+    {
+      "en": "Write your name",
+      "variants": [
+        {
+          "path": "responsive/commands/write-your-name-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9176
+        },
+        {
+          "path": "responsive/commands/write-your-name-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22044
+        },
+        {
+          "path": "responsive/commands/write-your-name-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54688
+        }
+      ]
+    },
+    {
+      "en": "Point to the door",
+      "variants": [
+        {
+          "path": "responsive/commands/point-to-the-door-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8758
+        },
+        {
+          "path": "responsive/commands/point-to-the-door-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20182
+        },
+        {
+          "path": "responsive/commands/point-to-the-door-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50904
+        }
+      ]
+    },
+    {
+      "en": "Point to the window",
+      "variants": [
+        {
+          "path": "responsive/commands/point-to-the-window-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10018
+        },
+        {
+          "path": "responsive/commands/point-to-the-window-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24580
+        },
+        {
+          "path": "responsive/commands/point-to-the-window-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 59522
+        }
+      ]
+    },
+    {
+      "en": "Open your bag",
+      "variants": [
+        {
+          "path": "responsive/commands/open-your-bag-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9706
+        },
+        {
+          "path": "responsive/commands/open-your-bag-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23968
+        },
+        {
+          "path": "responsive/commands/open-your-bag-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58516
+        }
+      ]
+    },
+    {
+      "en": "Clean the board",
+      "variants": [
+        {
+          "path": "responsive/commands/clean-the-board-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10482
+        },
+        {
+          "path": "responsive/commands/clean-the-board-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27546
+        },
+        {
+          "path": "responsive/commands/clean-the-board-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 75146
+        }
+      ]
+    },
+    {
+      "en": "Make a circle",
+      "variants": [
+        {
+          "path": "responsive/commands/make-a-circle-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10730
+        },
+        {
+          "path": "responsive/commands/make-a-circle-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 28072
+        },
+        {
+          "path": "responsive/commands/make-a-circle-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 69736
+        }
+      ]
+    },
+    {
+      "en": "Jump",
+      "variants": [
+        {
+          "path": "responsive/commands/jump-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8106
+        },
+        {
+          "path": "responsive/commands/jump-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18970
+        },
+        {
+          "path": "responsive/commands/jump-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 44978
+        }
+      ]
+    },
+    {
+      "en": "Run",
+      "variants": [
+        {
+          "path": "responsive/commands/run-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8704
+        },
+        {
+          "path": "responsive/commands/run-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20688
+        },
+        {
+          "path": "responsive/commands/run-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50402
+        }
+      ]
+    },
+    {
+      "en": "Walk",
+      "variants": [
+        {
+          "path": "responsive/commands/walk-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8034
+        },
+        {
+          "path": "responsive/commands/walk-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18660
+        },
+        {
+          "path": "responsive/commands/walk-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45702
+        }
+      ]
+    },
+    {
+      "en": "Stop",
+      "variants": [
+        {
+          "path": "responsive/commands/stop-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8056
+        },
+        {
+          "path": "responsive/commands/stop-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19170
+        },
+        {
+          "path": "responsive/commands/stop-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45902
+        }
+      ]
+    },
+    {
+      "en": "Turn around",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-around-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 7716
+        },
+        {
+          "path": "responsive/commands/turn-around-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18266
+        },
+        {
+          "path": "responsive/commands/turn-around-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 44200
+        }
+      ]
+    },
+    {
+      "en": "Spin around",
+      "variants": [
+        {
+          "path": "responsive/commands/spin-around-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8704
+        },
+        {
+          "path": "responsive/commands/spin-around-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20324
+        },
+        {
+          "path": "responsive/commands/spin-around-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 48170
+        }
+      ]
+    },
+    {
+      "en": "Touch your ears",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-ears-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9434
+        },
+        {
+          "path": "responsive/commands/touch-your-ears-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22478
+        },
+        {
+          "path": "responsive/commands/touch-your-ears-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52868
+        }
+      ]
+    },
+    {
+      "en": "Touch your eyes",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-eyes-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9282
+        },
+        {
+          "path": "responsive/commands/touch-your-eyes-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22596
+        },
+        {
+          "path": "responsive/commands/touch-your-eyes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54038
+        }
+      ]
+    },
+    {
+      "en": "Touch your mouth",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-mouth-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8460
+        },
+        {
+          "path": "responsive/commands/touch-your-mouth-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20130
+        },
+        {
+          "path": "responsive/commands/touch-your-mouth-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47668
+        }
+      ]
+    },
+    {
+      "en": "Touch your toes",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-your-toes-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8566
+        },
+        {
+          "path": "responsive/commands/touch-your-toes-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20328
+        },
+        {
+          "path": "responsive/commands/touch-your-toes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47938
+        }
+      ]
+    },
+    {
+      "en": "Shrug your shoulders",
+      "variants": [
+        {
+          "path": "responsive/commands/shrug-your-shoulders-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9556
+        },
+        {
+          "path": "responsive/commands/shrug-your-shoulders-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23562
+        },
+        {
+          "path": "responsive/commands/shrug-your-shoulders-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56682
+        }
+      ]
+    },
+    {
+      "en": "Wave your hand",
+      "variants": [
+        {
+          "path": "responsive/commands/wave-your-hand-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9662
+        },
+        {
+          "path": "responsive/commands/wave-your-hand-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22806
+        },
+        {
+          "path": "responsive/commands/wave-your-hand-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53588
+        }
+      ]
+    },
+    {
+      "en": "Stamp your feet",
+      "variants": [
+        {
+          "path": "responsive/commands/stamp-your-feet-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8944
+        },
+        {
+          "path": "responsive/commands/stamp-your-feet-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21018
+        },
+        {
+          "path": "responsive/commands/stamp-your-feet-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51282
+        }
+      ]
+    },
+    {
+      "en": "Shake your body",
+      "variants": [
+        {
+          "path": "responsive/commands/shake-your-body-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8782
+        },
+        {
+          "path": "responsive/commands/shake-your-body-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20890
+        },
+        {
+          "path": "responsive/commands/shake-your-body-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49618
+        }
+      ]
+    },
+    {
+      "en": "Bend down",
+      "variants": [
+        {
+          "path": "responsive/commands/bend-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8494
+        },
+        {
+          "path": "responsive/commands/bend-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19620
+        },
+        {
+          "path": "responsive/commands/bend-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 46790
+        }
+      ]
+    },
+    {
+      "en": "Reach up high",
+      "variants": [
+        {
+          "path": "responsive/commands/reach-up-high-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8582
+        },
+        {
+          "path": "responsive/commands/reach-up-high-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20102
+        },
+        {
+          "path": "responsive/commands/reach-up-high-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47666
+        }
+      ]
+    },
+    {
+      "en": "Hop on one foot",
+      "variants": [
+        {
+          "path": "responsive/commands/hop-on-one-foot-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8820
+        },
+        {
+          "path": "responsive/commands/hop-on-one-foot-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20542
+        },
+        {
+          "path": "responsive/commands/hop-on-one-foot-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49226
+        }
+      ]
+    },
+    {
+      "en": "Kneel down",
+      "variants": [
+        {
+          "path": "responsive/commands/kneel-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8782
+        },
+        {
+          "path": "responsive/commands/kneel-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20258
+        },
+        {
+          "path": "responsive/commands/kneel-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49240
+        }
+      ]
+    },
+    {
+      "en": "Stand still",
+      "variants": [
+        {
+          "path": "responsive/commands/stand-still-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 7380
+        },
+        {
+          "path": "responsive/commands/stand-still-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 17242
+        },
+        {
+          "path": "responsive/commands/stand-still-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 40394
+        }
+      ]
+    },
+    {
+      "en": "Go to sleep",
+      "variants": [
+        {
+          "path": "responsive/commands/go-to-sleep-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9636
+        },
+        {
+          "path": "responsive/commands/go-to-sleep-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23554
+        },
+        {
+          "path": "responsive/commands/go-to-sleep-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58740
+        }
+      ]
+    },
+    {
+      "en": "Wake up",
+      "variants": [
+        {
+          "path": "responsive/commands/wake-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10472
+        },
+        {
+          "path": "responsive/commands/wake-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26558
+        },
+        {
+          "path": "responsive/commands/wake-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 68574
+        }
+      ]
+    },
+    {
+      "en": "Fly like a bird",
+      "variants": [
+        {
+          "path": "responsive/commands/fly-like-a-bird-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9692
+        },
+        {
+          "path": "responsive/commands/fly-like-a-bird-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23380
+        },
+        {
+          "path": "responsive/commands/fly-like-a-bird-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56892
+        }
+      ]
+    },
+    {
+      "en": "Hop like a rabbit",
+      "variants": [
+        {
+          "path": "responsive/commands/hop-like-a-rabbit-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10074
+        },
+        {
+          "path": "responsive/commands/hop-like-a-rabbit-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24874
+        },
+        {
+          "path": "responsive/commands/hop-like-a-rabbit-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58958
+        }
+      ]
+    },
+    {
+      "en": "Swim like a fish",
+      "variants": [
+        {
+          "path": "responsive/commands/swim-like-a-fish-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9572
+        },
+        {
+          "path": "responsive/commands/swim-like-a-fish-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23796
+        },
+        {
+          "path": "responsive/commands/swim-like-a-fish-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56404
+        }
+      ]
+    },
+    {
+      "en": "Roar like a lion",
+      "variants": [
+        {
+          "path": "responsive/commands/roar-like-a-lion-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10534
+        },
+        {
+          "path": "responsive/commands/roar-like-a-lion-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26568
+        },
+        {
+          "path": "responsive/commands/roar-like-a-lion-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 65422
+        }
+      ]
+    },
+    {
+      "en": "Waddle like a duck",
+      "variants": [
+        {
+          "path": "responsive/commands/waddle-like-a-duck-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10002
+        },
+        {
+          "path": "responsive/commands/waddle-like-a-duck-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23254
+        },
+        {
+          "path": "responsive/commands/waddle-like-a-duck-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55726
+        }
+      ]
+    },
+    {
+      "en": "Slither like a snake",
+      "variants": [
+        {
+          "path": "responsive/commands/slither-like-a-snake-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10140
+        },
+        {
+          "path": "responsive/commands/slither-like-a-snake-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24804
+        },
+        {
+          "path": "responsive/commands/slither-like-a-snake-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 60254
+        }
+      ]
+    },
+    {
+      "en": "Jump like a frog",
+      "variants": [
+        {
+          "path": "responsive/commands/jump-like-a-frog-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8974
+        },
+        {
+          "path": "responsive/commands/jump-like-a-frog-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22206
+        },
+        {
+          "path": "responsive/commands/jump-like-a-frog-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53772
+        }
+      ]
+    },
+    {
+      "en": "Climb like a monkey",
+      "variants": [
+        {
+          "path": "responsive/commands/climb-like-a-monkey-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10492
+        },
+        {
+          "path": "responsive/commands/climb-like-a-monkey-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25708
+        },
+        {
+          "path": "responsive/commands/climb-like-a-monkey-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 61152
+        }
+      ]
+    },
+    {
+      "en": "Stomp like an elephant",
+      "variants": [
+        {
+          "path": "responsive/commands/stomp-like-an-elephant-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10928
+        },
+        {
+          "path": "responsive/commands/stomp-like-an-elephant-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27816
+        },
+        {
+          "path": "responsive/commands/stomp-like-an-elephant-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 67306
+        }
+      ]
+    },
+    {
+      "en": "Gallop like a horse",
+      "variants": [
+        {
+          "path": "responsive/commands/gallop-like-a-horse-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11026
+        },
+        {
+          "path": "responsive/commands/gallop-like-a-horse-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27022
+        },
+        {
+          "path": "responsive/commands/gallop-like-a-horse-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 66864
+        }
+      ]
+    },
+    {
+      "en": "Meow like a cat",
+      "variants": [
+        {
+          "path": "responsive/commands/meow-like-a-cat-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10502
+        },
+        {
+          "path": "responsive/commands/meow-like-a-cat-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25814
+        },
+        {
+          "path": "responsive/commands/meow-like-a-cat-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 61912
+        }
+      ]
+    },
+    {
+      "en": "Bark like a dog",
+      "variants": [
+        {
+          "path": "responsive/commands/bark-like-a-dog-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10252
+        },
+        {
+          "path": "responsive/commands/bark-like-a-dog-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24750
+        },
+        {
+          "path": "responsive/commands/bark-like-a-dog-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 59966
+        }
+      ]
+    },
+    {
+      "en": "Crawl like a turtle",
+      "variants": [
+        {
+          "path": "responsive/commands/crawl-like-a-turtle-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9736
+        },
+        {
+          "path": "responsive/commands/crawl-like-a-turtle-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23770
+        },
+        {
+          "path": "responsive/commands/crawl-like-a-turtle-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57472
+        }
+      ]
+    },
+    {
+      "en": "Soar like an eagle",
+      "variants": [
+        {
+          "path": "responsive/commands/soar-like-an-eagle-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9974
+        },
+        {
+          "path": "responsive/commands/soar-like-an-eagle-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25322
+        },
+        {
+          "path": "responsive/commands/soar-like-an-eagle-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 62634
+        }
+      ]
+    },
+    {
+      "en": "Walk like a crab",
+      "variants": [
+        {
+          "path": "responsive/commands/walk-like-a-crab-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9996
+        },
+        {
+          "path": "responsive/commands/walk-like-a-crab-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25064
+        },
+        {
+          "path": "responsive/commands/walk-like-a-crab-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 60832
+        }
+      ]
+    },
+    {
+      "en": "Brush your teeth",
+      "variants": [
+        {
+          "path": "responsive/commands/brush-your-teeth-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11236
+        },
+        {
+          "path": "responsive/commands/brush-your-teeth-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 28566
+        },
+        {
+          "path": "responsive/commands/brush-your-teeth-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 69138
+        }
+      ]
+    },
+    {
+      "en": "Take a shower",
+      "variants": [
+        {
+          "path": "responsive/commands/take-a-shower-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10692
+        },
+        {
+          "path": "responsive/commands/take-a-shower-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26456
+        },
+        {
+          "path": "responsive/commands/take-a-shower-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 64864
+        }
+      ]
+    },
+    {
+      "en": "Comb your hair",
+      "variants": [
+        {
+          "path": "responsive/commands/comb-your-hair-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9030
+        },
+        {
+          "path": "responsive/commands/comb-your-hair-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22256
+        },
+        {
+          "path": "responsive/commands/comb-your-hair-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55476
+        }
+      ]
+    },
+    {
+      "en": "Put on your shirt",
+      "variants": [
+        {
+          "path": "responsive/commands/put-on-your-shirt-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9358
+        },
+        {
+          "path": "responsive/commands/put-on-your-shirt-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22426
+        },
+        {
+          "path": "responsive/commands/put-on-your-shirt-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55634
+        }
+      ]
+    },
+    {
+      "en": "Put on your shoes",
+      "variants": [
+        {
+          "path": "responsive/commands/put-on-your-shoes-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9048
+        },
+        {
+          "path": "responsive/commands/put-on-your-shoes-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21922
+        },
+        {
+          "path": "responsive/commands/put-on-your-shoes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51348
+        }
+      ]
+    },
+    {
+      "en": "Eat breakfast",
+      "variants": [
+        {
+          "path": "responsive/commands/eat-breakfast-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11792
+        },
+        {
+          "path": "responsive/commands/eat-breakfast-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 30576
+        },
+        {
+          "path": "responsive/commands/eat-breakfast-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 76728
+        }
+      ]
+    },
+    {
+      "en": "Drink water",
+      "variants": [
+        {
+          "path": "responsive/commands/drink-water-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9320
+        },
+        {
+          "path": "responsive/commands/drink-water-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22768
+        },
+        {
+          "path": "responsive/commands/drink-water-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56172
+        }
+      ]
+    },
+    {
+      "en": "Read a book",
+      "variants": [
+        {
+          "path": "responsive/commands/read-a-book-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9990
+        },
+        {
+          "path": "responsive/commands/read-a-book-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24640
+        },
+        {
+          "path": "responsive/commands/read-a-book-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 61060
+        }
+      ]
+    },
+    {
+      "en": "Sweep the floor",
+      "variants": [
+        {
+          "path": "responsive/commands/sweep-the-floor-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11310
+        },
+        {
+          "path": "responsive/commands/sweep-the-floor-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 28432
+        },
+        {
+          "path": "responsive/commands/sweep-the-floor-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 71888
+        }
+      ]
+    },
+    {
+      "en": "Make the bed",
+      "variants": [
+        {
+          "path": "responsive/commands/make-the-bed-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10920
+        },
+        {
+          "path": "responsive/commands/make-the-bed-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27942
+        },
+        {
+          "path": "responsive/commands/make-the-bed-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 69040
+        }
+      ]
+    },
+    {
+      "en": "Open the door",
+      "variants": [
+        {
+          "path": "responsive/commands/open-the-door-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10610
+        },
+        {
+          "path": "responsive/commands/open-the-door-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26100
+        },
+        {
+          "path": "responsive/commands/open-the-door-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 63074
+        }
+      ]
+    },
+    {
+      "en": "Turn on the light",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-on-the-light-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10776
+        },
+        {
+          "path": "responsive/commands/turn-on-the-light-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 27148
+        },
+        {
+          "path": "responsive/commands/turn-on-the-light-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 67156
+        }
+      ]
+    },
+    {
+      "en": "Answer the phone",
+      "variants": [
+        {
+          "path": "responsive/commands/answer-the-phone-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9844
+        },
+        {
+          "path": "responsive/commands/answer-the-phone-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23894
+        },
+        {
+          "path": "responsive/commands/answer-the-phone-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58010
+        }
+      ]
+    },
+    {
+      "en": "Fold the clothes",
+      "variants": [
+        {
+          "path": "responsive/commands/fold-the-clothes-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9008
+        },
+        {
+          "path": "responsive/commands/fold-the-clothes-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22478
+        },
+        {
+          "path": "responsive/commands/fold-the-clothes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55426
+        }
+      ]
+    },
+    {
+      "en": "Go to bed",
+      "variants": [
+        {
+          "path": "responsive/commands/go-to-bed-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 12150
+        },
+        {
+          "path": "responsive/commands/go-to-bed-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 31152
+        },
+        {
+          "path": "responsive/commands/go-to-bed-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 79802
+        }
+      ]
+    },
+    {
+      "en": "Smile",
+      "variants": [
+        {
+          "path": "responsive/commands/smile-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8924
+        },
+        {
+          "path": "responsive/commands/smile-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20842
+        },
+        {
+          "path": "responsive/commands/smile-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 49072
+        }
+      ]
+    },
+    {
+      "en": "Laugh",
+      "variants": [
+        {
+          "path": "responsive/commands/laugh-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8926
+        },
+        {
+          "path": "responsive/commands/laugh-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21146
+        },
+        {
+          "path": "responsive/commands/laugh-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52058
+        }
+      ]
+    },
+    {
+      "en": "Cry",
+      "variants": [
+        {
+          "path": "responsive/commands/cry-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8926
+        },
+        {
+          "path": "responsive/commands/cry-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21632
+        },
+        {
+          "path": "responsive/commands/cry-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53106
+        }
+      ]
+    },
+    {
+      "en": "Be angry",
+      "variants": [
+        {
+          "path": "responsive/commands/be-angry-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8692
+        },
+        {
+          "path": "responsive/commands/be-angry-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20768
+        },
+        {
+          "path": "responsive/commands/be-angry-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50036
+        }
+      ]
+    },
+    {
+      "en": "Be scared",
+      "variants": [
+        {
+          "path": "responsive/commands/be-scared-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11122
+        },
+        {
+          "path": "responsive/commands/be-scared-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 26974
+        },
+        {
+          "path": "responsive/commands/be-scared-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 65952
+        }
+      ]
+    },
+    {
+      "en": "Be surprised",
+      "variants": [
+        {
+          "path": "responsive/commands/be-surprised-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8872
+        },
+        {
+          "path": "responsive/commands/be-surprised-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21268
+        },
+        {
+          "path": "responsive/commands/be-surprised-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50904
+        }
+      ]
+    },
+    {
+      "en": "Yawn",
+      "variants": [
+        {
+          "path": "responsive/commands/yawn-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8958
+        },
+        {
+          "path": "responsive/commands/yawn-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20906
+        },
+        {
+          "path": "responsive/commands/yawn-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 50102
+        }
+      ]
+    },
+    {
+      "en": "Be sleepy",
+      "variants": [
+        {
+          "path": "responsive/commands/be-sleepy-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9262
+        },
+        {
+          "path": "responsive/commands/be-sleepy-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22272
+        },
+        {
+          "path": "responsive/commands/be-sleepy-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55132
+        }
+      ]
+    },
+    {
+      "en": "Think",
+      "variants": [
+        {
+          "path": "responsive/commands/think-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8004
+        },
+        {
+          "path": "responsive/commands/think-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19028
+        },
+        {
+          "path": "responsive/commands/think-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 46240
+        }
+      ]
+    },
+    {
+      "en": "Be hungry",
+      "variants": [
+        {
+          "path": "responsive/commands/be-hungry-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9232
+        },
+        {
+          "path": "responsive/commands/be-hungry-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22564
+        },
+        {
+          "path": "responsive/commands/be-hungry-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56280
+        }
+      ]
+    },
+    {
+      "en": "Be cold",
+      "variants": [
+        {
+          "path": "responsive/commands/be-cold-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9984
+        },
+        {
+          "path": "responsive/commands/be-cold-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24750
+        },
+        {
+          "path": "responsive/commands/be-cold-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 61612
+        }
+      ]
+    },
+    {
+      "en": "Be hot",
+      "variants": [
+        {
+          "path": "responsive/commands/be-hot-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9438
+        },
+        {
+          "path": "responsive/commands/be-hot-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22256
+        },
+        {
+          "path": "responsive/commands/be-hot-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53072
+        }
+      ]
+    },
+    {
+      "en": "Give a hug",
+      "variants": [
+        {
+          "path": "responsive/commands/give-a-hug-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 10502
+        },
+        {
+          "path": "responsive/commands/give-a-hug-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 25120
+        },
+        {
+          "path": "responsive/commands/give-a-hug-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 60574
+        }
+      ]
+    },
+    {
+      "en": "Blow a kiss",
+      "variants": [
+        {
+          "path": "responsive/commands/blow-a-kiss-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9166
+        },
+        {
+          "path": "responsive/commands/blow-a-kiss-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21954
+        },
+        {
+          "path": "responsive/commands/blow-a-kiss-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54422
+        }
+      ]
+    },
+    {
+      "en": "Turn left",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-left-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8234
+        },
+        {
+          "path": "responsive/commands/turn-left-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18974
+        },
+        {
+          "path": "responsive/commands/turn-left-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45604
+        }
+      ]
+    },
+    {
+      "en": "Turn right",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-right-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8162
+        },
+        {
+          "path": "responsive/commands/turn-right-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18934
+        },
+        {
+          "path": "responsive/commands/turn-right-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45666
+        }
+      ]
+    },
+    {
+      "en": "Look up",
+      "variants": [
+        {
+          "path": "responsive/commands/look-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 7992
+        },
+        {
+          "path": "responsive/commands/look-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18860
+        },
+        {
+          "path": "responsive/commands/look-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45808
+        }
+      ]
+    },
+    {
+      "en": "Look down",
+      "variants": [
+        {
+          "path": "responsive/commands/look-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8346
+        },
+        {
+          "path": "responsive/commands/look-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19658
+        },
+        {
+          "path": "responsive/commands/look-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 47688
+        }
+      ]
+    },
+    {
+      "en": "Walk forward",
+      "variants": [
+        {
+          "path": "responsive/commands/walk-forward-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9272
+        },
+        {
+          "path": "responsive/commands/walk-forward-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21684
+        },
+        {
+          "path": "responsive/commands/walk-forward-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53066
+        }
+      ]
+    },
+    {
+      "en": "Step back",
+      "variants": [
+        {
+          "path": "responsive/commands/step-back-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8000
+        },
+        {
+          "path": "responsive/commands/step-back-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18404
+        },
+        {
+          "path": "responsive/commands/step-back-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 43412
+        }
+      ]
+    },
+    {
+      "en": "Step to the side",
+      "variants": [
+        {
+          "path": "responsive/commands/step-to-the-side-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8930
+        },
+        {
+          "path": "responsive/commands/step-to-the-side-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20570
+        },
+        {
+          "path": "responsive/commands/step-to-the-side-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 48008
+        }
+      ]
+    },
+    {
+      "en": "Raise your left hand",
+      "variants": [
+        {
+          "path": "responsive/commands/raise-your-left-hand-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9294
+        },
+        {
+          "path": "responsive/commands/raise-your-left-hand-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21994
+        },
+        {
+          "path": "responsive/commands/raise-your-left-hand-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53486
+        }
+      ]
+    },
+    {
+      "en": "Raise your right hand",
+      "variants": [
+        {
+          "path": "responsive/commands/raise-your-right-hand-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9058
+        },
+        {
+          "path": "responsive/commands/raise-your-right-hand-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21662
+        },
+        {
+          "path": "responsive/commands/raise-your-right-hand-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53158
+        }
+      ]
+    },
+    {
+      "en": "Lift your right leg",
+      "variants": [
+        {
+          "path": "responsive/commands/lift-your-right-leg-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 7992
+        },
+        {
+          "path": "responsive/commands/lift-your-right-leg-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 18774
+        },
+        {
+          "path": "responsive/commands/lift-your-right-leg-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 44636
+        }
+      ]
+    },
+    {
+      "en": "Stand on your left foot",
+      "variants": [
+        {
+          "path": "responsive/commands/stand-on-your-left-foot-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8250
+        },
+        {
+          "path": "responsive/commands/stand-on-your-left-foot-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19292
+        },
+        {
+          "path": "responsive/commands/stand-on-your-left-foot-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 45248
+        }
+      ]
+    },
+    {
+      "en": "Put your hands on your hips",
+      "variants": [
+        {
+          "path": "responsive/commands/put-your-hands-on-your-hips-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8568
+        },
+        {
+          "path": "responsive/commands/put-your-hands-on-your-hips-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 20456
+        },
+        {
+          "path": "responsive/commands/put-your-hands-on-your-hips-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 48442
+        }
+      ]
+    },
+    {
+      "en": "Put your hands up",
+      "variants": [
+        {
+          "path": "responsive/commands/put-your-hands-up-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9278
+        },
+        {
+          "path": "responsive/commands/put-your-hands-up-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21698
+        },
+        {
+          "path": "responsive/commands/put-your-hands-up-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52338
+        }
+      ]
+    },
+    {
+      "en": "Put your hands down",
+      "variants": [
+        {
+          "path": "responsive/commands/put-your-hands-down-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8308
+        },
+        {
+          "path": "responsive/commands/put-your-hands-down-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 19480
+        },
+        {
+          "path": "responsive/commands/put-your-hands-down-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 46506
+        }
+      ]
+    },
+    {
+      "en": "Hold hands with your partner",
+      "variants": [
+        {
+          "path": "responsive/commands/hold-hands-with-your-partner-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 11344
+        },
+        {
+          "path": "responsive/commands/hold-hands-with-your-partner-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 28690
+        },
+        {
+          "path": "responsive/commands/hold-hands-with-your-partner-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 70194
+        }
+      ]
+    },
+    {
+      "en": "Turn around twice",
+      "variants": [
+        {
+          "path": "responsive/commands/turn-around-twice-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8882
+        },
+        {
+          "path": "responsive/commands/turn-around-twice-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21690
+        },
+        {
+          "path": "responsive/commands/turn-around-twice-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 51520
+        }
+      ]
+    },
+    {
+      "en": "Show me one finger",
+      "variants": [
+        {
+          "path": "responsive/commands/show-me-one-finger-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9652
+        },
+        {
+          "path": "responsive/commands/show-me-one-finger-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22990
+        },
+        {
+          "path": "responsive/commands/show-me-one-finger-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54012
+        }
+      ]
+    },
+    {
+      "en": "Show me two fingers",
+      "variants": [
+        {
+          "path": "responsive/commands/show-me-two-fingers-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9336
+        },
+        {
+          "path": "responsive/commands/show-me-two-fingers-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22180
+        },
+        {
+          "path": "responsive/commands/show-me-two-fingers-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52758
+        }
+      ]
+    },
+    {
+      "en": "Show me five fingers",
+      "variants": [
+        {
+          "path": "responsive/commands/show-me-five-fingers-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9572
+        },
+        {
+          "path": "responsive/commands/show-me-five-fingers-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 24060
+        },
+        {
+          "path": "responsive/commands/show-me-five-fingers-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 57662
+        }
+      ]
+    },
+    {
+      "en": "Clap three times",
+      "variants": [
+        {
+          "path": "responsive/commands/clap-three-times-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 8996
+        },
+        {
+          "path": "responsive/commands/clap-three-times-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 21728
+        },
+        {
+          "path": "responsive/commands/clap-three-times-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52074
+        }
+      ]
+    },
+    {
+      "en": "Jump four times",
+      "variants": [
+        {
+          "path": "responsive/commands/jump-four-times-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9378
+        },
+        {
+          "path": "responsive/commands/jump-four-times-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23854
+        },
+        {
+          "path": "responsive/commands/jump-four-times-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 58174
+        }
+      ]
+    },
+    {
+      "en": "Stamp your feet six times",
+      "variants": [
+        {
+          "path": "responsive/commands/stamp-your-feet-six-times-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9660
+        },
+        {
+          "path": "responsive/commands/stamp-your-feet-six-times-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22622
+        },
+        {
+          "path": "responsive/commands/stamp-your-feet-six-times-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53526
+        }
+      ]
+    },
+    {
+      "en": "Touch something red",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-something-red-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9476
+        },
+        {
+          "path": "responsive/commands/touch-something-red-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22698
+        },
+        {
+          "path": "responsive/commands/touch-something-red-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 54604
+        }
+      ]
+    },
+    {
+      "en": "Touch something blue",
+      "variants": [
+        {
+          "path": "responsive/commands/touch-something-blue-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9724
+        },
+        {
+          "path": "responsive/commands/touch-something-blue-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 23446
+        },
+        {
+          "path": "responsive/commands/touch-something-blue-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 56902
+        }
+      ]
+    },
+    {
+      "en": "Point to something green",
+      "variants": [
+        {
+          "path": "responsive/commands/point-to-something-green-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9614
+        },
+        {
+          "path": "responsive/commands/point-to-something-green-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22880
+        },
+        {
+          "path": "responsive/commands/point-to-something-green-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53906
+        }
+      ]
+    },
+    {
+      "en": "Find something yellow",
+      "variants": [
+        {
+          "path": "responsive/commands/find-something-yellow-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9428
+        },
+        {
+          "path": "responsive/commands/find-something-yellow-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22510
+        },
+        {
+          "path": "responsive/commands/find-something-yellow-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 53940
+        }
+      ]
+    },
+    {
+      "en": "Hold up a black pen",
+      "variants": [
+        {
+          "path": "responsive/commands/hold-up-a-black-pen-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9308
+        },
+        {
+          "path": "responsive/commands/hold-up-a-black-pen-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22280
+        },
+        {
+          "path": "responsive/commands/hold-up-a-black-pen-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 52628
+        }
+      ]
+    },
+    {
+      "en": "Show me something white",
+      "variants": [
+        {
+          "path": "responsive/commands/show-me-something-white-160.webp",
+          "width": 160,
+          "height": 200,
+          "bytes": 9690
+        },
+        {
+          "path": "responsive/commands/show-me-something-white-320.webp",
+          "width": 320,
+          "height": 400,
+          "bytes": 22728
+        },
+        {
+          "path": "responsive/commands/show-me-something-white-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 55886
+        }
+      ]
+    }
+  ]
+}

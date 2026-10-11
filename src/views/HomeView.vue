@@ -45,7 +45,7 @@ const previewCards = computed(() => builtInDecks.find((d) => d.id === (previewDe
         <div class="welcome-art" aria-hidden="true">
           <span class="art-spark art-spark--one">✦</span><span class="art-spark art-spark--two">✧</span>
           <div class="art-circle"></div>
-          <div v-for="(card, i) in previewCards" :key="card.id" class="preview-card" :class="`preview-card--${i}`"><CardVisual :card="card" /></div>
+          <div v-for="(card, i) in previewCards" :key="card.id" class="preview-card" :class="`preview-card--${i}`"><CardVisual :card="card" thumbnail sizes="(max-width: 380px) 86px, (max-width: 700px) 102px, 147px" /></div>
           <span class="art-note">小小动作，大大快乐</span>
         </div>
       </section>

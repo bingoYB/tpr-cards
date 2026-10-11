@@ -42,17 +42,17 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webp,ico,woff2}'],
         // Precached images use content revisions; match their application version query too.
         ignoreURLParametersMatching: [/^v$/, /^utm_/, /^fbclid$/],
         // Keep installation small; other illustrated cards cache when viewed.
-        globIgnores: ['**/illustrations/commands/*.png'],
+        globIgnores: ['**/illustrations/responsive/commands/*.webp'],
         runtimeCaching: [{
-          urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/illustrations\/commands\/[^/]+\.png$/.test(url.pathname),
+          urlPattern: ({ url, sameOrigin }) => sameOrigin && /\/illustrations\/responsive\/commands\/[^/]+\.webp$/.test(url.pathname),
           handler: 'CacheFirst',
           options: {
-            cacheName: 'tpr-command-illustrations',
-            expiration: { maxEntries: 200, maxAgeSeconds: 365 * 24 * 60 * 60 },
+            cacheName: 'tpr-responsive-illustrations',
+            expiration: { maxEntries: 450, maxAgeSeconds: 365 * 24 * 60 * 60 },
             cacheableResponse: { statuses: [200] },
           },
         }],

@@ -1,5 +1,5 @@
 import type { TprCard } from '@/types'
-import { commandImages } from './commandImages'
+import { responsiveImages } from './responsiveImages'
 
 /** Order matches the stable one-year card IDs and generated card numbers. */
 export const oneYearIllustrations = [
@@ -19,5 +19,5 @@ export const oneYearIllustrations = [
 
 /** Match by exact command so edited cards never show a different caption. */
 export function getCardImage(card: TprCard): string | undefined {
-  return Object.hasOwn(commandImages, card.en) ? commandImages[card.en] : undefined
+  return Object.hasOwn(responsiveImages, card.en) ? responsiveImages[card.en]?.[320] : undefined
 }

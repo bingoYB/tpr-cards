@@ -23,9 +23,17 @@
 
 ## 图片压缩
 
-159 张卡片 PNG 已通过 Tinify 压缩，从 250.7 MiB 降至 84.1 MiB，减少 66.44%。保持 1122 × 1402 尺寸及透明度；Tinify 使用经用户确认的有损颜色优化。页面图片和各卡组下载包使用同一套压缩文件。
+159 张卡片 PNG 已通过 Tinify 压缩，从 250.7 MiB 降至 84.1 MiB，减少 66.44%。保持 1122 × 1402 尺寸及透明度；Tinify 使用经用户确认的有损颜色优化。下载包保留此套压缩后的原尺寸图片，页面使用下方的响应式图片。
 
 逐图路径、大小与 SHA-256 记录见 [压缩报告](docs/tinify-compression-report.json)。本机完整原图保存在 `image-originals/2026-10-11/`，该目录不提交或发布；压缩前版本也保留在 Git 历史中。
+
+## 响应式图片
+
+根据当前 CSS 展示尺寸，159 张内置图片生成三套 WebP：预览图 160 × 200、标准图 320 × 400、二倍图 640 × 800（等比缩放、不裁切）。首页卡组封面最大 90px、首屏插画最大 147px；卡片列表小于 320px；播放页最大 320px，因此以 320px 作为标准尺寸。
+
+`CardVisual` 使用 `srcset` 的 160w / 320w / 640w 和各场景对应的 `sizes`，浏览器按实际显示宽度与设备像素密度选择资源。三套总计约 13.4 MiB，原网页图片约 84.1 MiB。自定义上传图片也通过 Canvas 生成三档展示 Blob，IndexedDB 和导出备份保留原文件。
+
+原尺寸 PNG 保存在 `assets/card-originals/`，供构建下载包使用，不单独发布为网页图片。`scripts/resize-cards.mjs` 使用 Sharp 生成展示资源及内容哈希；构建会自动执行。逐图尺寸及大小见 [响应式图片报告](docs/responsive-images-report.json)。1 岁的三套图片预缓存，其他卡片按实际访问缓存。
 
 ## 开发
 
@@ -69,8 +77,9 @@ src/
     SettingsView.vue     # 设置 / 数据导入导出
   components/            # 通用组件（图标、头部、卡组卡片、更新提示）
 public/                  # 图标与 PWA 资源
-  illustrations/one-year/ # 12 张 1 岁英文图片卡及生图提示词
-  illustrations/commands/ # 147 张其他图片及 manifest.json（完整提示词与对应关系）
+  illustrations/one-year/ # 1 岁生图提示词及下载包
+  illustrations/commands/ # manifest.json（完整提示词与对应关系）
+  illustrations/responsive/ # 三套 WebP 展示图片
   downloads/              # 构建时生成的 11 个卡组 ZIP，不提交 Git
 scripts/package-cards.mjs # 验证图片、生成带内容哈希的映射和下载包
 ```

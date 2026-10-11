@@ -10,7 +10,7 @@ defineProps<{ deck: TprDeck }>()
 <template>
   <div class="deck" :style="{ '--deck-color': deck.color }">
     <RouterLink :to="`/deck/${deck.id}`" class="deck__main">
-      <span class="deck__cover" aria-hidden="true"><CardVisual v-if="deck.cards[0]" :card="deck.cards[0]" /><span v-else class="deck__emoji">{{ deck.emoji }}</span></span>
+      <span class="deck__cover" aria-hidden="true"><CardVisual v-if="deck.cards[0]" :card="deck.cards[0]" thumbnail sizes="(max-width: 700px) 80px, 90px" /><span v-else class="deck__emoji">{{ deck.emoji }}</span></span>
       <span class="deck__content"><span class="deck__category">{{ deck.emoji }} {{ ageLabel(deck.ageGroup) }} · {{ deck.cards.length }} 张卡片</span><span class="deck__name">{{ deck.name }}</span><span v-if="deck.description" class="deck__description">{{ deck.description }}</span><span class="deck__browse">翻开卡组 <span aria-hidden="true">↗</span></span></span>
     </RouterLink>
     <RouterLink :to="`/play/${deck.id}`" class="deck__play" :aria-label="`开始 ${deck.name}`"><Icon name="play" size="18" /></RouterLink>
