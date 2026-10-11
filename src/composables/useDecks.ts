@@ -1,14 +1,21 @@
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
 import { useLocalStorage } from '@vueuse/core'
 import { builtInDecks } from '@/data/decks'
 import type { TprCard, TprDeck } from '@/types'
 import { uid } from '@/utils'
 import { isAgeGroup, ageLabel } from '@/data/ages'
+import { pruneCardImages } from '@/storage/cardImages'
 
 /** Virtual deck id that mixes every card from every deck. */
 export const ALL_DECK_ID = 'all'
 
 const customDecks = useLocalStorage<TprDeck[]>('tpr.customDecks', [])
+
+watch(customDecks, () => {
+  void pruneCardImages(() => new Set(customDecks.value.flatMap((deck) =>
+    deck.cards.map((card) => card.imageId).filter((id): id is string => !!id),
+  ))).catch(() => { /* Retry cleanup on the next deck change if storage is unavailable. */ })
+})
 
 const allDecks = computed<TprDeck[]>(() => [...builtInDecks, ...customDecks.value])
 const totalCards = computed(() => allDecks.value.reduce((n, d) => n + d.cards.length, 0))
@@ -91,6 +98,7 @@ export function useDecks() {
             en: c.en.trim(),
             zh: String(c.zh ?? '').trim(),
             tip: typeof c.tip === 'string' ? c.tip : undefined,
+            imageId: typeof c.imageId === 'string' ? c.imageId : undefined,
             illustration: Number.isInteger(c.illustration) && c.illustration! >= 0 && c.illustration! < 12 ? c.illustration : undefined,
           })),
       })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, reactive, ref } from 'vue'
+import { computed, nextTick, onBeforeUnmount, reactive, ref } from 'vue'
 import { onBeforeRouteLeave, useRouter } from 'vue-router'
 import { useDecks } from '@/composables/useDecks'
 import { useBack } from '@/composables/useBack'
@@ -8,6 +8,8 @@ import { ageGroups } from '@/data/ages'
 import { hasEmoji, uid } from '@/utils'
 import AppHeader from '@/components/AppHeader.vue'
 import Icon from '@/components/Icon.vue'
+import CardVisual from '@/components/CardVisual.vue'
+import { IMAGE_ACCEPT, validateCardImage, writeCardImages } from '@/storage/cardImages'
 
 const props = defineProps<{ id: string }>()
 const router = useRouter()
@@ -38,6 +40,46 @@ const snapshot = JSON.stringify(form)
 const dirty = computed(() => JSON.stringify(form) !== snapshot)
 const saved = ref(false)
 
+const pendingImages = new Map<string, Blob>()
+const previews = reactive<Record<string, string>>({})
+const imageError = ref('')
+const uploading = ref(0)
+const saving = ref(false)
+
+function clearPreview(id: string) {
+  if (previews[id]) URL.revokeObjectURL(previews[id])
+  delete previews[id]
+}
+
+async function uploadImage(event: Event, card: TprCard) {
+  const input = event.target as HTMLInputElement
+  const file = input.files?.[0]
+  input.value = ''
+  if (!file) return
+  uploading.value++
+  imageError.value = ''
+  try {
+    await validateCardImage(file)
+    if (!form.cards.includes(card)) return
+    if (card.imageId) pendingImages.delete(card.imageId)
+    const id = `image_${uid()}`
+    pendingImages.set(id, file)
+    clearPreview(card.id)
+    previews[card.id] = URL.createObjectURL(file)
+    card.imageId = id
+  } catch (error) {
+    imageError.value = error instanceof Error ? error.message : '图片上传失败，请重试'
+  } finally { uploading.value-- }
+}
+
+function removeImage(card: TprCard) {
+  if (card.imageId) pendingImages.delete(card.imageId)
+  clearPreview(card.id)
+  delete card.imageId
+}
+
+onBeforeUnmount(() => Object.keys(previews).forEach(clearPreview))
+
 const enInputs = ref<HTMLInputElement[]>([])
 
 async function addCard() {
@@ -47,10 +89,14 @@ async function addCard() {
 }
 
 function removeCard(i: number) {
+  if (saving.value || uploading.value) return
+  const card = form.cards[i]
+  if (card) removeImage(card)
   form.cards.splice(i, 1)
 }
 
 function moveCard(i: number, delta: -1 | 1) {
+  if (saving.value) return
   const j = i + delta
   if (j < 0 || j >= form.cards.length) return
   const cards = form.cards
@@ -95,7 +141,15 @@ function applyBulk() {
 
 /* ---------- save / delete ---------- */
 
-function save() {
+async function save() {
+  if (saving.value || uploading.value) return
+  saving.value = true
+  imageError.value = ''
+  if (form.cards.some((card) => card.imageId && !card.en.trim())) {
+    imageError.value = '请为上传图片的卡片填写英文指令后再保存'
+    saving.value = false
+    return
+  }
   const cards = form.cards
     .filter((c) => c.en.trim())
     .map((c) => ({ ...c, emoji: c.emoji.trim() || '🃏', en: c.en.trim(), zh: c.zh.trim() }))
@@ -107,17 +161,25 @@ function save() {
     ageGroup: form.ageGroup || undefined,
     cards,
   }
-  saved.value = true
-  if (isNew.value) {
-    const id = createDeck(payload)
-    router.replace(`/deck/${id}`)
-  } else {
-    updateDeck(props.id, payload)
-    back(`/deck/${props.id}`)
-  }
+  try {
+    const imageIds = new Set(cards.map((card) => card.imageId))
+    await writeCardImages(new Map([...pendingImages].filter(([id]) => imageIds.has(id))))
+    if (isNew.value) {
+      const id = createDeck(payload)
+      saved.value = true
+      router.replace(`/deck/${id}`)
+    } else {
+      if (!updateDeck(props.id, payload)) throw new Error('卡组已被删除')
+      saved.value = true
+      back(`/deck/${props.id}`)
+    }
+  } catch {
+    imageError.value = '保存失败，请检查浏览器存储空间后重试。图片和修改仍保留在当前页面。'
+  } finally { saving.value = false }
 }
 
 function remove() {
+  if (saving.value || uploading.value) return
   if (!confirm(`确定删除「${form.name || '未命名卡组'}」？此操作不可恢复。`)) return
   saved.value = true
   deleteDeck(props.id)
@@ -125,6 +187,7 @@ function remove() {
 }
 
 onBeforeRouteLeave(() => {
+  if (!saved.value && (saving.value || uploading.value)) return false
   if (!saved.value && dirty.value && !confirm('有未保存的修改，确定离开？')) return false
   return true
 })
@@ -134,13 +197,14 @@ onBeforeRouteLeave(() => {
   <div class="page">
     <AppHeader :title="isNew ? '新建卡组' : '编辑卡组'" :back="isNew ? '/' : `/deck/${id}`">
       <template #actions>
-        <button class="icon-btn active" aria-label="保存" @click="save">
+        <button class="icon-btn active" aria-label="保存" :disabled="saving || uploading > 0" @click="save">
           <Icon name="check" size="28" />
         </button>
       </template>
     </AppHeader>
 
     <main class="container">
+      <fieldset class="edit-form" :disabled="saving" :aria-busy="saving">
       <div class="deck-meta">
         <div class="field field--emoji">
           <label for="deck-emoji">图标</label>
@@ -221,6 +285,14 @@ onBeforeRouteLeave(() => {
               />
               <input v-model="c.zh" class="input" placeholder="中文提示" aria-label="中文提示" />
             </div>
+            <div class="card-edit__image">
+              <CardVisual v-if="c.imageId" :card="c" :preview="previews[c.id]" />
+              <label class="btn btn-sm image-upload" :class="{ 'image-upload--busy': saving || uploading > 0 }">
+                <Icon name="upload" size="16" /> {{ c.imageId ? '替换图片' : '上传图片' }}
+                <input type="file" :accept="IMAGE_ACCEPT" :disabled="saving || uploading > 0" @change="uploadImage($event, c)" />
+              </label>
+              <button v-if="c.imageId" class="btn btn-sm btn-ghost btn-danger" :disabled="saving || uploading > 0" @click="removeImage(c)">移除图片</button>
+            </div>
             <div class="card-edit__tools">
               <button class="tool" :disabled="i === 0" aria-label="上移" @click="moveCard(i, -1)">
                 <Icon name="arrow-up" size="18" />
@@ -243,17 +315,21 @@ onBeforeRouteLeave(() => {
         <button class="btn btn-block add-card" @click="addCard"><Icon name="plus" /> 添加卡片</button>
       </section>
 
-      <button class="btn btn-primary btn-block save" @click="save">
-        <Icon name="check" /> 保存卡组
+      <p class="image-note">每张卡片可上传一张图片（PNG / JPG / WebP / GIF / AVIF，最大 20 MB），保存后离线可用。</p>
+      <p v-if="imageError" class="image-error" role="alert">{{ imageError }}</p>
+      <button class="btn btn-primary btn-block save" :disabled="saving || uploading > 0" @click="save">
+        <Icon name="check" /> {{ saving ? '保存中…' : uploading ? '读取图片中…' : '保存卡组' }}
       </button>
       <button v-if="!isNew" class="btn btn-block btn-ghost btn-danger" @click="remove">
         <Icon name="trash" /> 删除此卡组
       </button>
+      </fieldset>
     </main>
   </div>
 </template>
 
 <style scoped>
+.edit-form { border: 0; padding: 0; margin: 0; min-width: 0; }
 .deck-meta {
   display: grid;
   grid-template-columns: 88px 1fr;
@@ -346,7 +422,16 @@ onBeforeRouteLeave(() => {
   padding: 6px 12px;
 }
 
+.card-edit__image { grid-column: 1 / 3; grid-row: 2; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.card-edit__image :deep(.card-visual) { width: 72px; flex: none; border-radius: 8px; }
+.image-upload { position: relative; cursor: pointer; overflow: hidden; }
+.image-upload input { position: absolute; inset: 0; opacity: 0; width: 100%; cursor: pointer; }
+.image-upload--busy { opacity: .5; }
+.image-note { font-size: .8rem; color: var(--muted); margin-top: 16px; line-height: 1.6; }
+.image-error { color: var(--danger); margin-top: 12px; }
 .card-edit__tools {
+  grid-column: 3;
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
   gap: 2px;

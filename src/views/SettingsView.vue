@@ -8,6 +8,8 @@ import type { DeckExport, TprDeck } from '@/types'
 import { downloadText } from '@/utils'
 import AppHeader from '@/components/AppHeader.vue'
 import Icon from '@/components/Icon.vue'
+import { imageDataUrl, MAX_IMAGE_BYTES, readCardImage, validateCardImage, writeCardImages } from '@/storage/cardImages'
+import { uid } from '@/utils'
 
 const { settings, reset } = useSettings()
 const { supported: speechSupported, englishVoices, speak, refreshVoices } = useSpeech()
@@ -33,15 +35,29 @@ function testVoice() {
   speak('Stand up. Touch your nose. Jump three times.')
 }
 
-function exportDecks() {
+const transferring = ref(false)
+async function exportDecks() {
+  if (transferring.value) return
   if (!customDecks.value.length) return flash('还没有自定义卡组')
-  const data: DeckExport = {
-    version: 1,
-    exportedAt: new Date().toISOString(),
-    decks: customDecks.value,
-  }
-  const stamp = new Date().toISOString().slice(0, 10)
-  downloadText(`tpr-cards-${stamp}.json`, JSON.stringify(data, null, 2))
+  transferring.value = true
+  try {
+    const data: DeckExport = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      decks: customDecks.value,
+    }
+    const ids = new Set(data.decks.flatMap((deck) => deck.cards.map((card) => card.imageId).filter((id): id is string => !!id)))
+    data.images = {}
+    for (const id of ids) {
+      const blob = await readCardImage(id)
+      if (!blob) throw new Error('部分图片无法读取')
+      data.images[id] = await imageDataUrl(blob)
+    }
+    const stamp = new Date().toISOString().slice(0, 10)
+    downloadText(`tpr-cards-${stamp}.json`, JSON.stringify(data, null, 2))
+    flash('已导出卡组及上传图片')
+  } catch { flash('导出失败：图片无法读取或存储不可用，请重试') }
+  finally { transferring.value = false }
 }
 
 const fileInput = ref<HTMLInputElement | null>(null)
@@ -50,16 +66,46 @@ async function onImportFile(e: Event) {
   const input = e.target as HTMLInputElement
   const file = input.files?.[0]
   input.value = ''
-  if (!file) return
+  if (!file || transferring.value) return
+  transferring.value = true
   try {
     const parsed = JSON.parse(await file.text()) as Partial<DeckExport> | TprDeck[]
     const decks = Array.isArray(parsed) ? parsed : parsed.decks
     if (!Array.isArray(decks)) throw new Error('bad format')
+    // Give imported Blobs fresh keys so an import cannot overwrite another deck's image.
+    const embedded = !Array.isArray(parsed) ? parsed.images : undefined
+    const remapped = new Map<string, string>()
+    const images = new Map<string, Blob>()
+    for (const deck of decks) {
+      if (!deck || !Array.isArray(deck.cards)) continue
+      for (const card of deck.cards) {
+        if (!card || typeof card.en !== 'string' || !card.en.trim() || !card.imageId) continue
+        const oldId = card.imageId
+        if (!remapped.has(oldId)) {
+          const data = embedded && Object.hasOwn(embedded, oldId) ? embedded[oldId] : undefined
+          let blob: Blob | undefined
+          if (data !== undefined) {
+            if (typeof data !== 'string' || data.length > MAX_IMAGE_BYTES * 1.4) throw new Error('图片格式或大小不正确')
+            const match = /^data:(image\/(?:png|jpeg|webp|gif|avif));base64,([A-Za-z0-9+/=]+)$/.exec(data)
+            if (!match) throw new Error('图片格式不正确')
+            const bytes = Uint8Array.from(atob(match[2]!), (char) => char.charCodeAt(0))
+            blob = new Blob([bytes], { type: match[1] })
+          } else { blob = await readCardImage(oldId) }
+          if (!blob) throw new Error('备份缺少上传图片，请重新导出包含图片的备份')
+          await validateCardImage(blob)
+          const newId = `image_${uid()}`
+          remapped.set(oldId, newId)
+          images.set(newId, blob)
+        }
+        card.imageId = remapped.get(oldId)
+      }
+    }
+    await writeCardImages(images)
     const n = importDecks(decks)
     flash(n ? `已导入 ${n} 个卡组` : '文件里没有可导入的卡组')
-  } catch {
-    flash('导入失败：不是有效的卡组文件')
-  }
+  } catch (error) {
+    flash(`导入失败：${error instanceof Error ? error.message : '不是有效的卡组文件'}`)
+  } finally { transferring.value = false }
 }
 
 function clearAll() {
@@ -200,14 +246,14 @@ function resetSettings() {
         <h2 class="section-title">我的卡组数据</h2>
         <div class="card">
           <div class="row">
-            <label>导出为 JSON 文件<small>{{ customDecks.length }} 个自定义卡组</small></label>
-            <button class="btn btn-sm" :disabled="!customDecks.length" @click="exportDecks">
+            <label>导出为 JSON 文件<small>{{ customDecks.length }} 个自定义卡组 · 包含上传图片</small></label>
+            <button class="btn btn-sm" :disabled="!customDecks.length || transferring" @click="exportDecks">
               <Icon name="download" size="18" /> 导出
             </button>
           </div>
           <div class="row">
             <label>从 JSON 文件导入<small>相同 id 的卡组会被覆盖</small></label>
-            <button class="btn btn-sm" @click="fileInput?.click()">
+            <button class="btn btn-sm" :disabled="transferring" @click="fileInput?.click()">
               <Icon name="upload" size="18" /> 导入
             </button>
             <input
@@ -220,7 +266,7 @@ function resetSettings() {
           </div>
           <div class="row">
             <label>清空全部自定义卡组</label>
-            <button class="btn btn-sm btn-danger" :disabled="!customDecks.length" @click="clearAll">
+            <button class="btn btn-sm btn-danger" :disabled="!customDecks.length || transferring" @click="clearAll">
               <Icon name="trash" size="18" /> 清空
             </button>
           </div>

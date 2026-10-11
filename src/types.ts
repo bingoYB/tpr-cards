@@ -12,6 +12,8 @@ export interface TprCard {
   tip?: string
   /** Image index in the one-year standalone illustrations (0–11) */
   illustration?: number
+  /** Blob key in the local IndexedDB image store */
+  imageId?: string
 }
 
 export interface TprDeck {
@@ -32,4 +34,6 @@ export interface DeckExport {
   version: 1
   exportedAt: string
   decks: TprDeck[]
+  /** Uploaded image data included only in portable backups, never in localStorage. */
+  images?: Record<string, string>
 }

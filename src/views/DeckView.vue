@@ -14,7 +14,7 @@ const { getDeck, duplicateDeck } = useDecks()
 
 const deck = computed(() => getDeck(props.id))
 const downloadUrl = computed(() => deck.value?.builtIn ? `${import.meta.env.BASE_URL}downloads/${deck.value.id}.zip` : undefined)
-const illustrated = computed(() => deck.value?.cards.some((c) => !!getCardImage(c)))
+const illustrated = computed(() => deck.value?.cards.some((c) => !!c.imageId || !!getCardImage(c)))
 const ageHint = computed(() => ageGroups.find((age) => age.id === deck.value?.ageGroup)?.hint)
 
 function copyToMine() {
@@ -59,7 +59,7 @@ function copyToMine() {
         <a v-if="downloadUrl && illustrated" :href="downloadUrl" download class="btn deck-download"><Icon name="download" /> 下载 {{ deck.cards.length }} 张英文图片卡</a>
       </div>
 
-      <p v-if="illustrated" class="deck-age-hint">图片联网查看后可离线浏览，也可下载整组图片保存或打印。</p>
+      <p v-if="illustrated && deck.builtIn" class="deck-age-hint">图片联网查看后可离线浏览，也可下载整组图片保存或打印。</p>
 
       <section class="section">
         <h2 class="section-title">卡片列表 · 点击任意一张从它开始</h2>
@@ -76,7 +76,7 @@ function copyToMine() {
               <small>{{ c.zh }}</small>
               <small v-if="c.tip" class="card-row__tip">{{ c.tip }}</small>
             </span>
-            <span v-if="!getCardImage(c)" class="card-row__index">{{ i + 1 }}</span>
+            <span v-if="!c.imageId && !getCardImage(c)" class="card-row__index">{{ i + 1 }}</span>
           </RouterLink>
         </div>
         <p v-else class="empty">

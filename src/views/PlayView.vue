@@ -285,7 +285,7 @@ watch(
       <Transition :name="dir === 'next' ? 'slide-left' : 'slide-right'" mode="out-in">
         <div :key="`${pos}-${order[pos]}`" class="flash">
           <div v-if="isSimon" class="flash__simon">🗣️ Simon says…</div>
-          <CardVisual :card="card" class="flash__emoji" :class="{ 'flash__image': !!getCardImage(card) }" />
+          <CardVisual :card="card" class="flash__emoji" :class="{ 'flash__image': !!card.imageId || !!getCardImage(card) }" />
           <div class="flash__text">
             <div class="flash__en">{{ card.en }}</div>
             <div class="flash__zh" :class="{ 'flash__zh--hidden': !showZh }">{{ card.zh }}</div>
