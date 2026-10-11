@@ -1,0 +1,15 @@
+/** Order matches the stable one-year card IDs and generated card numbers. */
+export const oneYearIllustrations = [
+  { name: 'clap', en: 'Clap your hands' },
+  { name: 'wave', en: 'Wave hello' },
+  { name: 'arms-up', en: 'Arms up' },
+  { name: 'head', en: 'Touch your head' },
+  { name: 'nose', en: 'Touch your nose' },
+  { name: 'ear', en: 'Touch your ear' },
+  { name: 'teddy', en: 'Give me the teddy' },
+  { name: 'put-in', en: 'Put it in' },
+  { name: 'roll', en: 'Roll the ball' },
+  { name: 'peekaboo', en: 'Peekaboo' },
+  { name: 'page', en: 'Turn the page' },
+  { name: 'hug', en: 'Give me a hug' },
+]

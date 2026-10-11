@@ -1,0 +1,4 @@
+# pnpm settings (not a multi-package workspace).
+# esbuild's postinstall only validates its native binary; approving it keeps `pnpm install` exiting cleanly.
+allowBuilds:
+  esbuild: true
